@@ -15,7 +15,7 @@ function Projects() {
       link: "E-commerce-React-",
       title: "E-commerce website",
       text: "an e-commerce website with react with dummyjson api ,pagination and search",
-      skill: "react",
+      skill: "React",
     },
     {
       src: "game",
