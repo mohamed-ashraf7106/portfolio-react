@@ -1,0 +1,26 @@
+ul li a{
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fefce8;
+  z-index: 2;
+  font-weight: bold;
+  position: relative;
+}
+ul li a::after{
+  position: absolute;
+  content: "";
+  border-radius: 5px;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+
+  background-color: #ca6f2e;
+  z-index: -1;
+  transition: 0.3s;
+}
+ul li a:hover::after{
+  width: 100%;
+  left: 0;
+}

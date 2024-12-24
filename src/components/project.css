@@ -1,0 +1,31 @@
+.project:nth-child(2n) {
+  min-width: 300px;
+  transform: translateX(200%);
+  animation: projectLeft linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+.project:nth-child(2n + 1) {
+  min-width: 300px;
+  transform: translateX(-200%);
+  animation: projectRight linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+.skillImg {
+  position: absolute;
+  max-width: 50px;
+  left: 50%;
+  transform: translateX(-50%) translatey(-50%);
+}
+
+@keyframes projectLeft {
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes projectRight {
+  100% {
+    transform: translateX(0);
+  }
+}

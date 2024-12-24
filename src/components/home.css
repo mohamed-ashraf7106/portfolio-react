@@ -1,0 +1,42 @@
+.background {
+  background-image: url("../assets/images/1.jpg");
+  height: 100vh;
+  color: white;
+  background-size: cover;
+}
+.homeText{
+  font-size: clamp(25px,6vw,90px);
+  font-weight: bold;
+}
+.imgAnimated span:nth-child(2){
+  background-color: white;
+  min-width: 100px;
+  color: black;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  border-radius: 20px;
+  width: fit-content;
+  animation: animateUpNDownMain 14s ease-in-out infinite;
+}
+.imgAnimated img{
+  width: clamp(200px,80%,400px);
+  animation: animateUpNDownMain 16s linear infinite;
+}
+
+@keyframes animateUpNDownMain {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(70px) translateX(-30px);
+  }
+  75%{
+    transform: translateY(50px) translateX(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
